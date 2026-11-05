@@ -24,6 +24,7 @@
             android:textColor="@color/white" />
 
         <EditText
+            android:id="@+id/editTextEmail"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:hint="Digite seu e-mail"
@@ -40,6 +41,7 @@
             android:layout_marginTop="16dp"/>
 
         <EditText
+            android:id="@+id/editTextSenha"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:inputType="textPassword"
@@ -49,6 +51,7 @@
             android:background="@drawable/bg_edit_text"/>
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login"
@@ -64,6 +67,7 @@
             android:layout_marginTop="4dp">
 
             <TextView
+                android:id="@+id/btnRegister"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Criar Conta"
@@ -72,6 +76,7 @@
                 android:textColor="@color/white"/>
 
             <TextView
+                android:id="@+id/btnRecover"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Recuperar Conta"
@@ -82,11 +87,20 @@
         </LinearLayout>
 
         <ProgressBar
+            android:id="@+id/progressBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:indeterminateTint="@color/white"
             android:layout_gravity="center"
-            android:layout_marginTop="16dp"/>
+            android:layout_marginTop="16dp"
+            tools:visibility="visible"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Sofia Alves Figueredo"/>
 
     </LinearLayout>
 
